@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  microservice1:
+    build:
+      context: ./Microservice1
+    ports:
+      - "5001:5000"
+    container_name: microservice1
+
+  microservice2:
+    build:
+      context: ./Microservice2
+    ports:
+      - "5002:5000"
+    container_name: microservice2
